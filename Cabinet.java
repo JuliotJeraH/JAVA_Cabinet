@@ -6,7 +6,7 @@ public class Cabinet {
 
 
     public Docteur[] docteur_libres(){
-        Docteur[] docteur_libres= new Docteur[10];
+        Docteur[] docteur_libres= new Docteur[docteurs.length];
         int compteur=0;
         for (int i = 0; i < docteurs.length; i++) {
             boolean libre = true;
