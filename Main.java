@@ -69,24 +69,24 @@ public class Main {
 // ------------------------------------------------- PATIENT ---------------------------------------------------------------
 
         Patient patient1=new Patient();
-        patient1.nom="Rova";
-        patient1.nom="Emilie";
+        patient1.prenom="Rova";
+        patient1.prenom="Emilie";
 
         Patient patient2=new Patient();
-        patient2.nom="Ravo";
-        patient2.nom="Nekena";
+        patient2.prenom="Ravo";
+        patient2.prenom="Nekena";
 
         Patient patient3=new Patient();
-        patient3.nom="Nantenaina";
-        patient3.nom="Diamondra";
+        patient3.prenom="Nantenaina";
+        patient3.prenom="Diamondra";
 
         Patient patient4=new Patient();
-        patient4.nom="Valisoa";
-        patient4.nom="Nandrasana";
+        patient4.prenom="Valisoa";
+        patient4.prenom="Nandrasana";
 
         Patient patient5=new Patient();
-        patient5.nom="Sarobidy";
-        patient5.nom="Rindrasoa";
+        patient5.prenom="Sarobidy";
+        patient5.prenom="Rindrasoa";
 
 // ---------------------------------------------- RENDEZ-VOUS ------------------------------------------------------
         Rendez_vous rendez_vous1=new Rendez_vous();
@@ -153,7 +153,16 @@ public class Main {
         System.out.println("Docteurs libres :\n");
         for (int i = 0; i < docteur_libres.length; i++) {
             if (docteur_libres[i] != null) {
-                System.out.println("Docteur " + (i + 1) + ": " + docteur_libres[i].nom + " " + docteur_libres[i].prenom);
+                System.out.println("Docteur " + (i + 1) + ": " + docteur_libres[i].nom + " " + docteur_libres[i].prenom+"\n");
+            }
+        }
+
+
+        Docteur[] docteur_nonlibres = cabinet1.docteur_nonlibres();
+        System.out.println("Docteurs non libres :\n");
+        for (int i = 0; i < docteur_nonlibres.length; i++) {
+            if (docteur_nonlibres[i] != null) {
+                System.out.println("Docteur " + (i + 1) + ": " + docteur_nonlibres[i].nom + " " + docteur_nonlibres[i].prenom);
             }
         }
 
